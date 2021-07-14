@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(241, 236, 236);
+    width: 100vw;
+}
+
+.top_panel{
+    background-color: rgba(90, 170, 207, 0.534);
+    padding: 10px;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.badge{
+    padding:5px;
+    font-size: 30px;
+}
+
+.note_row_div{
+    position: relative;
+}
+
+#add_note{
+    position: absolute;
+    border-radius: 20%;
+    border:transparent;
+    padding: 5px;
+    padding-top: 0;
+    padding-bottom:0;
+    width: 30px;
+    margin-right: 100px;
+    transition: width .5s,margin-right .5s;
+    transform: linear;
+}
+
+.fa-chevron-right{
+    font-size: 22px;
+    background-color: turquoise;
+    padding: 7px;
+    padding-left: 9px;
+    padding-right: 9px;
+    margin-right: 84px;
+}
+
+.fa-arrow-right{
+    position: absolute;
+    top:3px;
+    right:0;
+    font-size: 25px;
+    visibility: hidden;
+    transition: right .5s;
+    transform: linear;
+}
+
+#add_note:hover{
+    background-color: turquoise;
+    width: 130px;
+    margin-right: 0;
+}
+
+#add_note:hover .fa-arrow-right{
+    right:100px;
+    visibility: visible;
+}
+
+#add_note:hover .fa-chevron-right{
+    visibility: hidden;
+}
+
+.add_text{
+    position: absolute;
+    width:90px;
+    font-weight: bold;
+    padding-left: 3px;
+    padding-top: 5px;
+    padding-right:3px
+}
+
+.edit_note{
+    font-size: 20px;
+    padding: 5px;
+    margin:3px;
+    color:white;
+    background-color: green;
+}
+
+.edit_note:hover{
+    cursor: pointer;
+    color: green;
+    background-color: white;
+}
+
+.delete_note{
+    font-size: 20px;
+    padding: 5px;
+    margin:3px;
+    color:white;
+    background-color: red;
+}
+
+.delete_note:hover{
+    cursor:pointer;
+    color:red;
+    background-color: white;
+}
+
+textarea{
+    margin-top: 5px;
+    border:none;
+    resize:none;
+}
+
+textarea:focus{
+    outline:none;
+}
+
+textarea:disabled{
+    background-color: white;
+}
+
+.note{
+    display: flex;
+    width: 25%;
+    padding: 10px;
+    box-shadow: black,2px,2px;
+    flex-direction: column;
+    background-color: white;
+    margin:30px;
+    border-radius: 10%;
+    overflow-y:scroll;
+}
+
+.note_area{
+    margin-top:100px
+}
+
+.activated{
+    color: lightgreen;
+    background-color: darkgreen;
+}
+
+.deactivated{
+    color: white;
+    background-color: green;
+}
